@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Blood Red Background -->
+  <rect width="500" height="500" fill="#C80000"/>
+  
+  <!-- Left vertical block -->
+  <rect x="55" y="235" width="85" height="195" fill="#FFFFFF"/>
+  
+  <!-- Bold Stylized R -->
+  <path d="M 120 50 
+           L 440 50 
+           L 440 100 
+           L 180 360 
+           L 245 430 
+           L 180 430 
+           L 120 360 
+           Z" fill="#FFFFFF" opacity="0"/>
+  
+  <!-- Main R Shape matching reference image -->
+  <polygon points="120,50 440,50 440,110 320,230 420,330 330,430 230,330 310,250 180,120 180,50" fill="#FFFFFF" opacity="0"/>
+  
+  <!-- Precise reference geometry -->
+  <!-- Top bar + main diagonal leg of R -->
+  <polygon points="120,50 445,50 445,100 240,305 365,430 250,430 155,335 270,220 155,105 120,105" fill="#FFFFFF" opacity="0"/>
+
+  <g fill="#FFFFFF">
+    <!-- Left vertical bar -->
+    <rect x="55" y="235" width="85" height="195"/>
+    
+    <!-- Top arm & diagonal leg of R -->
+    <polygon points="120,50 445,50 445,105 220,330 320,430 220,430 120,330 245,205 155,115 120,115"/>
+    
+    <!-- Bottom right dot -->
+    <circle cx="395" cy="380" r="42"/>
+  </g>
+</svg>

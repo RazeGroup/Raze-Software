@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flo-demo.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Prevent crawling of any unnecessary files
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/

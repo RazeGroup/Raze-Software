@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | RAZE — CapitalField</title>
+    <meta name="description" content="Frequently asked questions about CapitalField by RAZE — the field service management platform for service companies.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home-extra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/raze-logo.svg">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="capital-field.html">CapitalField</a>
+                <a href="raze-kb.html">Raze KB</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="faq.html" class="active">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about RAZE and CapitalField.</p>
+        </div>
+    </section>
+
+    <section class="content-section" style="padding-bottom: 5rem;">
+        <div class="container">
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q1">
+                    What is CapitalField by RAZE?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>CapitalField is a cloud-based field service management platform developed by RAZE for service companies
+                        — water filter companies, HVAC technicians, elevator maintenance teams, pest control businesses,
+                        and more. It helps you manage customers, schedule visits, track technicians, handle contracts,
+                        and generate reports — all from one dashboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q2">
+                    Who is CapitalField built for?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>CapitalField is built for any company that sends technicians or service teams to customer locations.
+                        This includes water filter installation/maintenance, HVAC, pest control, elevator maintenance,
+                        security systems, solar energy, home appliances, and cleaning companies. If you have a field
+                        team, CapitalField is built for you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q3">
+                    Is CapitalField suitable for small and scaling businesses?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely. CapitalField is designed by RAZE to be highly scalable and intuitive for small, medium, and enterprise service companies. You can start with a handful of technicians and scale up seamlessly as your team grows.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q4">
+                    Can I manage multiple companies on one account?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. CapitalField is built as a multi-tenant platform. Each company's data is fully isolated
+                        and secure. Admins can manage multiple company profiles from a single dashboard, making it ideal
+                        for business groups or management companies overseeing multiple branches.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q5">
+                    What are industry templates?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Industry templates are pre-configured setups for specific service sectors. When you install a
+                        template (e.g. Water Filters), CapitalField automatically creates the right custom fields, visit
+                        statuses, and report forms for that industry. This means your team can start working from day
+                        one without manual configuration.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q6">
+                    Can I customize fields and statuses?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes — fully. The Settings panel lets you add unlimited custom fields (text, number, date, select,
+                        checkbox, file) to any entity. You can also create custom visit statuses with any name and color.
+                        Everything is tailored to how your business actually works.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q7">
+                    How do roles and permissions work?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>CapitalField has built-in system roles: Super Admin, Admin, Manager, Customer Service, and
+                        Technician. Each role has a defined set of permissions. You can also create custom roles and
+                        assign granular permissions (e.g. <strong>visits.edit</strong> or <strong>customers.*</strong>).
+                        This ensures every team member sees only what they need.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q8">
+                    Is my company's data secure with RAZE?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. RAZE engineered CapitalField with session-based authentication using httpOnly cookies, ensuring login sessions cannot be compromised by client-side scripts. All tenant data is strictly scoped per company ID to guarantee multi-tenant security.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" id="faq-q9">
+                    How do I request a demo?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Simply head to our <a href="contact.html" style="color: var(--accent-color);">Contact page</a>
+                        and send us a message or call us directly. Our team will schedule a live walkthrough of CapitalField tailored to your industry and team size — completely free.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="capital-field.html">CapitalField</a>
+                <a href="raze-kb.html">Raze KB</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/raze.software/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/RazeSoftware/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/raze-software"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

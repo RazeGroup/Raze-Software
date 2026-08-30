@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raze KB — Cybersecurity Knowledge Base & Tools | RAZE</title>
+    <meta name="description"
+        content="Raze KB is a comprehensive cybersecurity knowledge base, security cheatsheets, penetration testing playbooks, and offensive/defensive toolkits built by RAZE Software.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home-extra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/raze-logo.svg">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="capital-field.html">CapitalField</a>
+                <a href="raze-kb.html" class="active">Raze KB</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: radial-gradient(circle at center, #1a080c 0%, var(--bg-color) 70%);">
+        <div class="container">
+            <div class="cyber-badge">
+                <i class="fas fa-shield-halved"></i> Cybersecurity Knowledge Base & Arsenal
+            </div>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">
+                Raze <span class="gradient-text">KB</span>
+            </h1>
+            <p style="max-width: 680px; margin: 0 auto 2rem; color: var(--text-muted); font-size: 1.1rem;">
+                A comprehensive, engineer-curated cybersecurity knowledge repository featuring offensive cheat sheets, defensive hardening guides, security tools, and interactive exploitation notes.
+            </p>
+
+            <!-- Go to Raze KB Website Button -->
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0 1rem;">
+                <a href="https://kb.raze-software.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-visit-raze-kb" style="background: linear-gradient(135deg, #0072ff, #00c6ff); font-size: 1.1rem; padding: 1rem 2.5rem; box-shadow: 0 10px 25px rgba(0, 114, 255, 0.4); display: inline-flex; align-items: center; gap: 0.7rem;">
+                    <i class="fas fa-arrow-up-right-from-square"></i> Go to Raze KB Website
+                </a>
+                <a href="contact.html" class="btn btn-secondary" style="font-size: 1rem; padding: 1rem 2rem;">
+                    <i class="fas fa-envelope"></i> Request Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base Content -->
+    <section class="content-section" style="padding-bottom: 5rem;">
+        <div class="container">
+
+            <!-- Category Filter Pills -->
+            <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                <button class="btn btn-secondary kb-filter-btn active-filter" onclick="filterCategory('all', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">All Topics</button>
+                <button class="btn btn-secondary kb-filter-btn" onclick="filterCategory('web-security', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fas fa-globe"></i> Web Security</button>
+                <button class="btn btn-secondary kb-filter-btn" onclick="filterCategory('active-directory', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fas fa-sitemap"></i> Active Directory</button>
+                <button class="btn btn-secondary kb-filter-btn" onclick="filterCategory('priv-esc', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fas fa-key"></i> Privilege Escalation</button>
+                <button class="btn btn-secondary kb-filter-btn" onclick="filterCategory('network', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fas fa-network-wired"></i> Network & Recon</button>
+                <button class="btn btn-secondary kb-filter-btn" onclick="filterCategory('tools', this)" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fas fa-toolbox"></i> Security Tools</button>
+            </div>
+
+            <!-- KB Grid -->
+            <div class="products-grid" id="kbGrid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem;">
+
+                <!-- Card 1: Web Pentesting Cheat Sheet -->
+                <div class="kb-card" data-category="web-security">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(200, 0, 0, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.4rem;">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(200, 0, 0, 0.2); color: #ff6b7e;">Cheatsheet</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Web Application Exploitation</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        High-yield payloads and methodologies for SQLi, XSS, SSRF, IDOR, JWT bypasses, and OAuth misconfigurations.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>sqlmap -u "target.com/api?id=1" --batch --dbs --random-agent</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">SQLi</span>
+                        <span class="kb-tag">XSS</span>
+                        <span class="kb-tag">SSRF</span>
+                        <span class="kb-tag">JWT</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Active Directory & Domain Attacks -->
+                <div class="kb-card" data-category="active-directory">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(139, 92, 246, 0.15); display: flex; align-items: center; justify-content: center; color: #a78bfa; font-size: 1.4rem;">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd;">Enterprise AD</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Active Directory & Kerberos</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        Deep-dive playbooks on Kerberoasting, AS-REP Roasting, BloodHound pathing, DCSync, and Golden Ticket generation.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>GetUserSPNs.py domain.local/user:pass -request -dc-ip 10.10.10.1</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">Kerberoast</span>
+                        <span class="kb-tag">BloodHound</span>
+                        <span class="kb-tag">Mimikatz</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Linux & Windows Privilege Escalation -->
+                <div class="kb-card" data-category="priv-esc">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(16, 185, 129, 0.15); display: flex; align-items: center; justify-content: center; color: #10b981; font-size: 1.4rem;">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7;">PrivEsc</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Privilege Escalation Arsenal</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        Automated enum vectors: SUID binaries, cronjobs, Linux capabilities, Windows unquoted service paths, and SeImpersonate tokens.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>find / -perm -u=s -type f 2&gt;/dev/null</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">LinPEAS</span>
+                        <span class="kb-tag">WinPEAS</span>
+                        <span class="kb-tag">GTFOBins</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Network Reconnaissance & Pivoting -->
+                <div class="kb-card" data-category="network">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59, 130, 246, 0.15); display: flex; align-items: center; justify-content: center; color: #60a5fa; font-size: 1.4rem;">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd;">Network</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Network Recon & Tunneling</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        Port scanning, NSE scripting, Chisel SOCKS5 proxy chains, SSH dynamic port forwarding, and stealth traffic pivoting.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>chisel client 10.10.14.5:8000 R:socks &amp; proxychains nmap</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">Nmap</span>
+                        <span class="kb-tag">Chisel</span>
+                        <span class="kb-tag">Proxychains</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: RAZE Security Toolkit & Utilities -->
+                <div class="kb-card" data-category="tools">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(245, 158, 11, 0.15); display: flex; align-items: center; justify-content: center; color: #fbbf24; font-size: 1.4rem;">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(245, 158, 11, 0.2); color: #fde68a;">Tool Suite</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">RAZE Automated Toolkits</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        Proprietary automation scripts developed by RAZE for rapid subdomain enumeration, header hardening, and CVE scanner pipelines.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>python3 raze_recon.py -t target.corp --all-modules</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">Automation</span>
+                        <span class="kb-tag">Recon</span>
+                        <span class="kb-tag">CVE Feed</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: Defensive Security & Hardening -->
+                <div class="kb-card" data-category="web-security">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(236, 72, 153, 0.15); display: flex; align-items: center; justify-content: center; color: #f472b6; font-size: 1.4rem;">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <span class="kb-tag" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8;">Blue Team</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Defensive Blueprints & Hardening</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; flex-grow: 1;">
+                        CIS benchmark checklists, NGINX SSL security configurations, WAF rule tuning, and incident response runbooks.
+                    </p>
+                    <div class="kb-code-snippet">
+                        <code>add_header Content-Security-Policy "default-src 'self'";</code>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="kb-tag">CIS Benchmarks</span>
+                        <span class="kb-tag">WAF</span>
+                        <span class="kb-tag">Hardening</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Direct Access CTA -->
+            <div style="margin-top: 4rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 3rem; text-align: center;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Need Dedicated Cybersecurity Systems or Custom Tools?</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">
+                    RAZE designs custom enterprise security architectures, automated threat auditing pipelines, and bespoke intelligence tools for organizations.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Request a Demo / Security Consultation
+                    </a>
+                    <a href="products.html" class="btn btn-secondary">
+                        <i class="fas fa-cubes"></i> View All RAZE Products
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="capital-field.html">CapitalField</a>
+                <a href="raze-kb.html">Raze KB</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/raze.software/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/RazeSoftware/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/raze-software"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterCategory(cat, btn) {
+            document.querySelectorAll('.kb-filter-btn').forEach(b => b.classList.remove('active-filter'));
+            if (btn) btn.classList.add('active-filter');
+            const cards = document.querySelectorAll('.kb-card');
+            cards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-category') === cat) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
