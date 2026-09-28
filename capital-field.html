@@ -1,415 +1,68 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CapitalField — Complete Field Service Management Platform | RAZE</title>
-    <meta name="description"
-        content="CapitalField by RAZE is a complete field service management platform for service companies. Manage visits, technicians, customers, contracts, and reports in one place.">
+    <title>RAZE — CapitalField</title>
+    <meta name="description" content="CapitalField — The precision field service management OS by RAZE.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home-extra.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/raze-logo.svg">
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="container nav-container">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                RAZE
             </a>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html" class="active">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="how-it-works.html" class="nav-link">How It Works</a>
+                <a href="contact.html" class="btn btn-pill" style="margin-left: 16px;">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="fsm-hero">
-        <div class="hero-bg-grid"></div>
-        <div class="container fsm-hero-content">
-            <div class="fsm-badge">
-                <i class="fas fa-network-wired"></i> Field Service Management Platform
-            </div>
-            <h1>
-                CapitalField
-                <span class="sub-name">The operating system for your service business by RAZE</span>
-            </h1>
-            <p>
-                A complete, multi-tenant platform developed by RAZE that gives service companies full control over their operations —
-                from the first customer call to the final visit report. Built for water filter companies, HVAC teams,
-                elevator maintenance, pest control, security systems, solar, and more.
-            </p>
-            <div class="hero-ctas">
-                <a href="contact.html" class="btn btn-primary" id="fsm-hero-demo">
-                    <i class="fas fa-calendar-alt"></i> Request a Free Demo
-                </a>
-                <a href="capital-field-saas.html" class="btn btn-secondary" id="fsm-hero-saas">
-                    <i class="fas fa-arrow-up-right-from-square"></i> Go to Capital Field
-                </a>
-                <a href="#features" class="btn btn-outline" id="fsm-hero-features">
-                    <i class="fas fa-arrow-down"></i> See All Features
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <section style="background: var(--card-bg); padding: 2.5rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
         <div class="container">
-            <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; text-align: center;">
-                <div>
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-color);">21</div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Database Models</div>
-                </div>
-                <div>
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-color);">10</div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Core Modules</div>
-                </div>
-                <div>
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-color);">8+</div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Industry Templates</div>
-                </div>
-                <div>
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-color);">∞</div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Custom Fields</div>
-                </div>
-                <div>
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-color);">Multi</div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Tenant Ready</div>
+            <div class="hero-content">
+                <span class="badge red" style="margin-bottom: 16px;">CapitalField FSM</span>
+                <h1 class="text-hero hero-title">Total Operational Control.</h1>
+                <p class="hero-subtitle">The enterprise-grade field service management system engineered by RAZE for HVAC, elevators, pest control, and water purification teams.</p>
+                <div class="hero-ctas">
+                    <a href="contact.html" class="btn btn-primary">Request Demo</a>
+                    <a href="capital-field-saas.html" class="btn btn-secondary">Access SaaS</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Core Features -->
-    <section class="fsm-features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Everything You Need to Run Your Business</h2>
-                <p>10 fully integrated modules — all in one dashboard, accessible from anywhere.</p>
-            </div>
-            <div class="features-grid-6">
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    <h4>Smart Dashboard</h4>
-                    <p>6 customizable widgets showing today's visits, revenue, overdue tasks, technician performance, expiring contracts, and monthly trends.</p>
+            <!-- Dashboard Visual -->
+            <div class="showcase-wrapper">
+                <div class="showcase-card" style="padding: 0; overflow: hidden; height: 500px; background: var(--color-obsidian); border: 0.5px solid var(--color-graphite); display: flex; flex-direction: column;">
+                    <div style="padding: 12px 16px; border-bottom: 0.5px solid var(--color-graphite); display: flex; align-items: center; gap: 8px;">
+                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
+                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
+                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
+                        <div class="text-mono" style="margin-left: 16px; font-size: 12px; color: var(--color-fog);">CapitalField // Dashboard</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px; height: 100%;">
+                        <div style="background: var(--color-carbon); border: 0.5px solid var(--color-graphite); border-radius: 6px; padding: 24px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="text-body-muted" style="margin-bottom: 8px;">Active Technicians</div>
+                            <div class="text-heading" style="color: var(--color-pulse-green);">42</div>
+                        </div>
+                        <div style="background: var(--color-carbon); border: 0.5px solid var(--color-graphite); border-radius: 6px; padding: 24px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="text-body-muted" style="margin-bottom: 8px;">Completed Visits</div>
+                            <div class="text-heading" style="color: var(--color-paper);">1,208</div>
+                        </div>
+                        <div style="background: var(--color-carbon); border: 0.5px solid var(--color-graphite); border-radius: 6px; padding: 24px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="text-body-muted" style="margin-bottom: 8px;">Pending Approvals</div>
+                            <div class="text-heading" style="color: var(--color-raze-red);">7</div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-user-tie"></i></div>
-                    <h4>Customer CRM</h4>
-                    <p>Full customer profiles with contact details, visit history, contracts, file attachments, and unlimited custom fields per sector.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-calendar-check"></i></div>
-                    <h4>Visit Management</h4>
-                    <p>Schedule, assign, and track every field visit. Custom statuses, inline status updates, visit reports per sector, and full CRUD.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-hard-hat"></i></div>
-                    <h4>Technician Management</h4>
-                    <p>View technician cards with specialty, team, availability, completion rate, star rating, and total visits at a glance.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-file-contract"></i></div>
-                    <h4>Contract Management</h4>
-                    <p>Track active, expired, and cancelled contracts with renewal dates, payment frequency (monthly/quarterly/yearly), and amounts.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-chart-bar"></i></div>
-                    <h4>Reports & Analytics</h4>
-                    <p>Monthly visit and revenue bar charts, visits-by-status breakdown, and detailed technician performance tables.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-users-cog"></i></div>
-                    <h4>User & Role Management</h4>
-                    <p>Full CRUD for users with role-based access control. Supports wildcard permissions, system roles, and custom roles per company.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-calendar-alt"></i></div>
-                    <h4>Calendar View</h4>
-                    <p>See all upcoming visits ordered by date. Filter by technician, customer, status, or date range.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-cogs"></i></div>
-                    <h4>Advanced Settings</h4>
-                    <p>5-tab settings panel: Modules on/off, custom statuses, custom fields, role management, and one-click industry template installation.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-clipboard-list"></i></div>
-                    <h4>Visit Report Forms</h4>
-                    <p>8 sector-specific report forms: water filters, HVAC, elevators, pest control, security systems, solar, appliances, and cleaning.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-layer-group"></i></div>
-                    <h4>Industry Templates</h4>
-                    <p>Install a sector template in one click — it automatically creates the right custom fields, statuses, and forms for your industry.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="fc-icon"><i class="fas fa-lock"></i></div>
-                    <h4>Multi-Tenant Security</h4>
-                    <p>Every company's data is fully isolated. Session-based auth with httpOnly cookies. Role-based access with granular permissions.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="fsm-steps">
-        <div class="container">
-            <div class="section-header">
-                <h2>How CapitalField Works</h2>
-                <p>Get your team up and running in four simple steps.</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-item">
-                    <div class="step-num">1</div>
-                    <h4>Set Up Your Company</h4>
-                    <p>Create your company profile, add team members, assign roles, and choose an industry template.</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-num">2</div>
-                    <h4>Import Your Customers</h4>
-                    <p>Add your customer base with all their details. Attach contracts, notes, and custom fields.</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-num">3</div>
-                    <h4>Schedule Visits</h4>
-                    <p>Assign visits to technicians, set dates and times, and let your team manage them in the field.</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-num">4</div>
-                    <h4>Track & Improve</h4>
-                    <p>Monitor performance through reports, fix bottlenecks, and grow your revenue month over month.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modules Deep Dive -->
-    <section style="padding: 5rem 0; background: var(--bg-color);">
-        <div class="container">
-            <div class="section-header">
-                <h2>10 Modules. One Platform.</h2>
-                <p>Turn any module on or off from the Settings panel. Only pay for what you use.</p>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
-                    <div class="tb-use">6 live widgets</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-users"></i> Customers</div>
-                    <div class="tb-use">CRM + custom fields</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-calendar-check"></i> Visits</div>
-                    <div class="tb-use">Full scheduling</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-hard-hat"></i> Technicians</div>
-                    <div class="tb-use">Performance cards</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-file-contract"></i> Contracts</div>
-                    <div class="tb-use">Renewal tracking</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-chart-bar"></i> Reports</div>
-                    <div class="tb-use">Charts + tables</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-bell"></i> Notifications</div>
-                    <div class="tb-use">Real-time alerts</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-user-cog"></i> Users</div>
-                    <div class="tb-use">CRUD + roles</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-calendar-alt"></i> Calendar</div>
-                    <div class="tb-use">Upcoming visits</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name"><i class="fas fa-cogs"></i> Settings</div>
-                    <div class="tb-use">Full control</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industry Sectors -->
-    <section class="fsm-sectors" style="background: var(--card-bg);">
-        <div class="container">
-            <div class="section-header">
-                <h2>8 Industry Templates — Ready to Install</h2>
-                <p>Each template automatically configures custom fields, visit statuses, and report forms for your sector.</p>
-            </div>
-            <div class="sectors-detailed-grid">
-                <div class="sector-card">
-                    <i class="fas fa-tint"></i>
-                    <h4>Water Filters</h4>
-                    <p>Filter type, membrane, pressure reading, flow rate, and maintenance tracking.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-snowflake"></i>
-                    <h4>HVAC & AC</h4>
-                    <p>AC type, gas type, compressor reading, fan speed, and service logs.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-bug"></i>
-                    <h4>Pest Control</h4>
-                    <p>Pest type, chemicals used, areas treated, and treatment intervals.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-elevator"></i>
-                    <h4>Elevators</h4>
-                    <p>Elevator type, cable condition, door alignment, and safety checks.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h4>Security Systems</h4>
-                    <p>System type, panel status, camera count, and alarm testing.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-solar-panel"></i>
-                    <h4>Solar Energy</h4>
-                    <p>Panel type, inverter status, battery condition, and energy output.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-blender"></i>
-                    <h4>Home Appliances</h4>
-                    <p>Appliance type, brand, issue type, and spare parts tracking.</p>
-                </div>
-                <div class="sector-card">
-                    <i class="fas fa-broom"></i>
-                    <h4>Cleaning</h4>
-                    <p>Service type, area size, room count, and cleaning supplies used.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack -->
-    <section class="fsm-tech">
-        <div class="container">
-            <div class="section-header">
-                <h2>Built on Modern Technology</h2>
-                <p>Enterprise-grade stack by RAZE for reliability, speed, and scalability.</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-badge">
-                    <div class="tb-name">Next.js 16</div>
-                    <div class="tb-use">Full-stack React</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Prisma ORM</div>
-                    <div class="tb-use">Type-safe DB layer</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">PostgreSQL</div>
-                    <div class="tb-use">Production database</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Tailwind CSS</div>
-                    <div class="tb-use">Modern UI styling</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Recharts</div>
-                    <div class="tb-use">Data visualization</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Lucide Icons</div>
-                    <div class="tb-use">Icon system</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Sonner</div>
-                    <div class="tb-use">Toast notifications</div>
-                </div>
-                <div class="tech-badge">
-                    <div class="tb-name">Session Auth</div>
-                    <div class="tb-use">httpOnly cookies</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roles & Permissions -->
-    <section style="padding: 5rem 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Roles & Permissions System</h2>
-                <p>Granular access control — give each team member exactly what they need, nothing more.</p>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <i class="fas fa-crown"></i>
-                    <h3>Super Admin</h3>
-                    <p>Full access to everything — all modules, all settings, all users.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-user-shield"></i>
-                    <h3>Admin</h3>
-                    <p>Company-level management with access to users, reports, and settings.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>Manager</h3>
-                    <p>Operational access — visits, customers, technician assignments.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-hard-hat"></i>
-                    <h3>Technician</h3>
-                    <p>Limited view — assigned visits, customer info, report submission only.</p>
-                </div>
-            </div>
-            <p style="text-align: center; color: var(--text-muted); margin-top: 2rem; font-size: 0.9rem;">
-                + Create unlimited custom roles with wildcard permissions (e.g. <code style="color: var(--accent-color);">customers.*</code> or <code style="color: var(--accent-color);">visits.edit</code>)
-            </p>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-banner">
-        <div class="container" style="text-align: center;">
-            <h2>See CapitalField in Action</h2>
-            <p>Book a free demo with the RAZE team — we'll walk you through the full platform in under 30 minutes.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
-                <a href="contact.html" class="btn btn-primary" id="fsm-cta-demo">
-                    <i class="fas fa-calendar-alt"></i> Book a Free Demo
-                </a>
-                <a href="capital-field-saas.html" class="btn btn-secondary" id="fsm-cta-saas">
-                    <i class="fas fa-arrow-up-right-from-square"></i> Go to Capital Field
-                </a>
             </div>
         </div>
     </section>
@@ -417,28 +70,23 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-content">
+                <div class="logo-link">
+                    <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                    RAZE Software
+                </div>
+                <div class="footer-links">
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/RazeSoftware" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/raze.software/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/raze-software" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RazeGroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="mailto:raze.softwaree@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p class="copyright">&copy; 2026 Raze Software. All rights reserved.</p>
+                <div class="text-mono" style="color: var(--color-ash); font-size: 12px;">Status: All systems operational</div>
             </div>
-            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>

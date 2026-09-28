@@ -1,164 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | RAZE Software</title>
-    <meta name="description" content="Get in touch with the RAZE team to request a demo of CapitalField or ask any questions about our systems software.">
+    <title>RAZE — Contact</title>
+    <meta name="description" content="Contact RAZE Software for custom enterprise platforms. Nothing redundant.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home-extra.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/raze-logo.svg">
 </head>
-
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="container nav-container">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                RAZE
             </a>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="how-it-works.html" class="nav-link">How It Works</a>
+                <a href="contact.html" class="btn btn-pill" style="margin-left: 16px;">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <section class="page-header">
+    <!-- Page Header -->
+    <section class="hero" style="padding-bottom: 0;">
+        <div class="hero-bg-gradient"></div>
         <div class="container">
-            <h1>Get in Touch</h1>
-            <p>Interested in CapitalField or custom software systems from RAZE? We'd love to show you how it works. Reach out and we'll set up a free demo.</p>
+            <div class="hero-content" style="max-width: 800px; text-align: center; margin: 0 auto;">
+                <h1 class="text-hero hero-title">Let's build something real.</h1>
+                <p class="hero-subtitle" style="margin: 0 auto 40px;">No fluff, no redundant features. Just precise software engineering tailored to your operational needs.</p>
+            </div>
         </div>
     </section>
 
-    <section class="content-section" style="padding-bottom: 5rem;">
-        <div class="container">
-
-            <!-- Contact Cards -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
-                <div style="padding: 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-                    <i class="fas fa-envelope" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3 style="margin-bottom: 0.5rem;">Email</h3>
-                    <a href="mailto:raze.softwaree@gmail.com" style="color: var(--accent-color); font-size: 0.95rem; text-decoration: none; font-weight: 500; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">raze.softwaree@gmail.com</a>
-                </div>
-                <div style="padding: 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; text-align: center;">
-                    <i class="fas fa-phone" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3 style="margin-bottom: 0.5rem;">Phone</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">+20 106 337 0030</p>
-                </div>
-                <div style="padding: 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; text-align: center;">
-                    <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3 style="margin-bottom: 0.5rem;">Office</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Matar Street, New Nozha<br>Cairo, Egypt</p>
-                </div>
-            </div>
-
-            <!-- Demo Request Form -->
-            <div style="max-width: 640px; margin: 0 auto; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2.5rem;">
-                <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem;">Request a Free Demo</h2>
-                <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.92rem;">
-                    Fill in your details and our team will get back to you within 24 hours to schedule a personalized walkthrough.
-                </p>
-                <form id="demo-form" style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div>
-                            <label style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; color: var(--text-muted);">Your Name *</label>
-                            <input id="contact-name" type="text" placeholder="Ahmed Hassan" required
-                                style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
-                                onfocus="this.style.borderColor='var(--accent-color)'"
-                                onblur="this.style.borderColor='var(--border-color)'">
-                        </div>
-                        <div>
-                            <label style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; color: var(--text-muted);">Company Name *</label>
-                            <input id="contact-company" type="text" placeholder="Al-Noor Services" required
-                                style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
-                                onfocus="this.style.borderColor='var(--accent-color)'"
-                                onblur="this.style.borderColor='var(--border-color)'">
-                        </div>
+    <section class="container" style="padding-top: 48px;">
+        <div style="display: flex; gap: 64px; justify-content: center; align-items: flex-start; max-width: 900px; margin: 0 auto;">
+            
+            <div class="showcase-card" style="flex: 1; border: 0.5px solid var(--color-graphite);">
+                <h2 class="text-subheading" style="margin-bottom: 24px;">Send a message</h2>
+                <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <label class="text-body" style="font-size: 14px;">Name</label>
+                        <input type="text" style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); color: var(--color-paper); padding: 12px 14px; border-radius: var(--radius-inputs); outline: none; font-family: var(--font-inter-variable);" placeholder="Your name">
                     </div>
-                    <div>
-                        <label style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; color: var(--text-muted);">Phone Number *</label>
-                        <input id="contact-phone" type="tel" placeholder="+20 1XX XXX XXXX" required
-                            style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
-                            onfocus="this.style.borderColor='var(--accent-color)'"
-                            onblur="this.style.borderColor='var(--border-color)'">
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <label class="text-body" style="font-size: 14px;">Email</label>
+                        <input type="email" style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); color: var(--color-paper); padding: 12px 14px; border-radius: var(--radius-inputs); outline: none; font-family: var(--font-inter-variable);" placeholder="Your email">
                     </div>
-                    <div>
-                        <label style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; color: var(--text-muted);">Your Industry *</label>
-                        <select id="contact-industry" required
-                            style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; outline: none; appearance: none; transition: border-color 0.2s;"
-                            onfocus="this.style.borderColor='var(--accent-color)'"
-                            onblur="this.style.borderColor='var(--border-color)'">
-                            <option value="" disabled selected>Select your industry</option>
-                            <option value="water_filter">Water Filters</option>
-                            <option value="hvac">HVAC & AC</option>
-                            <option value="pest_control">Pest Control</option>
-                            <option value="elevator">Elevators</option>
-                            <option value="security">Security Systems</option>
-                            <option value="solar">Solar Energy</option>
-                            <option value="appliances">Home Appliances</option>
-                            <option value="cleaning">Cleaning</option>
-                            <option value="other">Other</option>
-                        </select>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <label class="text-body" style="font-size: 14px;">Message</label>
+                        <textarea rows="5" style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); color: var(--color-paper); padding: 12px 14px; border-radius: var(--radius-inputs); outline: none; font-family: var(--font-inter-variable);" placeholder="How can we help?"></textarea>
                     </div>
-                    <div>
-                        <label style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; color: var(--text-muted);">Message (optional)</label>
-                        <textarea id="contact-message" rows="4" placeholder="Tell us a bit about your team size and what systems you're looking to build..."
-                            style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; outline: none; resize: vertical; transition: border-color 0.2s;"
-                            onfocus="this.style.borderColor='var(--accent-color)'"
-                            onblur="this.style.borderColor='var(--border-color)'"></textarea>
-                    </div>
-                    <button type="submit" id="contact-submit" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; margin-top: 0.5rem;">
-                        <i class="fas fa-calendar-alt"></i> Request a Demo
-                    </button>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 16px; width: 100%;">Send Request</button>
                 </form>
             </div>
 
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 32px;">
+                <div>
+                    <h3 class="text-subheading" style="font-size: 20px; margin-bottom: 16px;">Direct Contact</h3>
+                    <p class="text-body-muted">Prefer email? Reach out directly to our engineering team.</p>
+                    <div class="text-mono" style="color: var(--color-paper); margin-top: 16px;">raze.softwaree@gmail.com</div>
+                </div>
+                <div>
+                    <h3 class="text-subheading" style="font-size: 20px; margin-bottom: 16px;">Social Links</h3>
+                    <div style="display: flex; gap: 16px; font-size: 20px; color: var(--color-fog);">
+                        <a href="https://github.com/RazeGroup" style="color: inherit;"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/company/raze-software" style="color: inherit;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/raze.software/" style="color: inherit;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-content">
+                <div class="logo-link">
+                    <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                    RAZE Software
+                </div>
+                <div class="footer-links">
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/RazeSoftware" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/raze.software/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/raze-software" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RazeGroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="mailto:raze.softwaree@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p class="copyright">&copy; 2026 Raze Software. All rights reserved.</p>
+                <div class="text-mono" style="color: var(--color-ash); font-size: 12px;">Status: All systems operational</div>
             </div>
-            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
-    <script>
-        document.getElementById('demo-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = document.getElementById('contact-submit');
-            btn.innerHTML = '<i class="fas fa-check"></i> Message Sent! We\'ll be in touch soon.';
-            btn.style.background = '#10b981';
-            btn.disabled = true;
-        });
-    </script>
 </body>
 </html>

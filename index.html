@@ -1,377 +1,176 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAZE — Advanced Systems & Software Development</title>
-    <meta name="description"
-        content="RAZE develops high-performance enterprise systems, business management software, and custom digital platforms including CapitalField.">
+    <title>RAZE — Software Engineering</title>
+    <meta name="description" content="RAZE develops high-performance enterprise systems, business management software, and custom digital platforms. Nothing redundant.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home-extra.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/raze-logo.svg">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="container nav-container">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                RAZE
             </a>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="how-it-works.html" class="nav-link">How It Works</a>
+                <a href="contact.html" class="btn btn-pill" style="margin-left: 16px;">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero hero-business">
-        <div class="hero-bg-grid"></div>
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-bolt"></i> Software & Systems Engineering
-            </div>
-            <h1>Engineering Enterprise Systems.<br><span class="gradient-text">Smarter. Faster.</span></h1>
-            <p>RAZE develops powerful software platforms and tailored business systems that help service companies manage their operations, track performance, and scale efficiently.</p>
-            <div class="hero-ctas">
-                <a href="contact.html" class="btn btn-primary" id="hero-request-demo">
-                    <i class="fas fa-calendar-alt"></i> Request a Demo
-                </a>
-                <a href="capital-field-saas.html" class="btn btn-secondary" id="hero-go-capitalfield">
-                    <i class="fas fa-arrow-up-right-from-square"></i> Go to Capital Field
-                </a>
-                <a href="capital-field.html" class="btn btn-outline" id="hero-learn-more">
-                    <i class="fas fa-arrow-right"></i> Explore CapitalField
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">8+</span>
-                    <span class="stat-label">Industry Sectors</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">21</span>
-                    <span class="stat-label">Core Modules</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Cloud Systems</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="what-we-do" style="padding: 5rem 0;">
+    <header class="hero">
+        <div class="hero-bg-gradient"></div>
         <div class="container">
-            <div class="section-header">
-                <h2>The Challenges We Solve</h2>
-                <p>Most companies struggle with fragmented software, paper records, and manual communication to manage daily operations. RAZE replaces chaos with seamless automation.</p>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <i class="fas fa-times-circle" style="color: #ef4444;"></i>
-                    <h3>Missed Visits & Tasks</h3>
-                    <p>Without centralized software systems, technicians miss appointments and client requests drop through the cracks.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-times-circle" style="color: #ef4444;"></i>
-                    <h3>No Operational Visibility</h3>
-                    <p>Management lacks real-time dashboards and analytics to see field activity until issues escalate.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-times-circle" style="color: #ef4444;"></i>
-                    <h3>Manual Data & Reporting</h3>
-                    <p>Valuable time is wasted assembling spreadsheets instead of focusing on growth and client satisfaction.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-check-circle" style="color: #10b981;"></i>
-                    <h3>RAZE Software Solves This</h3>
-                    <p>One unified system. Complete control. Automated scheduling, field tracking, and analytics built for your business.</p>
+            <div class="hero-content">
+                <h1 class="text-hero hero-title">Nothing redundant.</h1>
+                <p class="hero-subtitle">We engineer precision software for modern enterprises. Focused, fast, and infinitely scalable platforms built to eliminate friction and empower growth.</p>
+                <div class="hero-ctas">
+                    <a href="contact.html" class="btn btn-primary">
+                        Start a project <i class="fas fa-arrow-right" style="font-size: 12px; margin-left: 4px;"></i>
+                    </a>
+                    <a href="products.html" class="btn btn-secondary">
+                        View our work
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CapitalField Spotlight -->
-    <section class="spotlight" style="background: var(--card-bg);">
-        <div class="container">
-            <div class="spotlight-grid">
-                <div class="spotlight-text">
-                    <div class="spotlight-label">
-                        <i class="fas fa-star"></i> FLAGSHIP PRODUCT
-                    </div>
-                    <h2>CapitalField</h2>
-                    <p>A multi-tenant field service management system engineered by RAZE for water filtration companies, HVAC specialists, elevator maintenance teams, pest control providers, and more.</p>
-                    <div class="spotlight-features">
-                        <div class="spotlight-feature">
-                            <div class="sf-icon"><i class="fas fa-calendar-check"></i></div>
-                            <div>
-                                <strong>Visit Scheduling & Tracking</strong>
-                                <p>Assign, monitor, and complete field visits with live status updates.</p>
-                            </div>
+            <!-- Product/Software Showcase Frame -->
+            <div class="showcase-wrapper">
+                <div class="showcase-card" style="padding: 0; overflow: hidden; height: 600px; display: flex; align-items: center; justify-content: center; border: 0.5px solid var(--color-graphite);">
+                    <!-- Simulated UI or Abstract Code visual since it's a general software company -->
+                    <div style="width: 100%; height: 100%; background: var(--color-carbon); position: relative;">
+                        <!-- Mac window dots -->
+                        <div style="position: absolute; top: 16px; left: 16px; display: flex; gap: 8px;">
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #383b3f;"></div>
                         </div>
-                        <div class="spotlight-feature">
-                            <div class="sf-icon"><i class="fas fa-users"></i></div>
-                            <div>
-                                <strong>Technician Management</strong>
-                                <p>Track ratings, availability, team performance, and visit completion metrics.</p>
+                        <!-- Abstract Code Block -->
+                        <div style="padding: 64px 32px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="text-mono" style="margin-bottom: 16px;">
+                                <span style="color: var(--color-fog);">import</span> { RazeEngine } <span style="color: var(--color-fog);">from</span> '@raze/core';
                             </div>
-                        </div>
-                        <div class="spotlight-feature">
-                            <div class="sf-icon"><i class="fas fa-chart-bar"></i></div>
-                            <div>
-                                <strong>Analytics & Reports</strong>
-                                <p>Live revenue tracking, monthly visit stats, and customizable executive dashboards.</p>
+                            <div class="text-mono" style="margin-bottom: 16px;">
+                                <span style="color: var(--color-fog);">const</span> system = <span style="color: var(--color-fog);">new</span> RazeEngine({
                             </div>
-                        </div>
-                        <div class="spotlight-feature">
-                            <div class="sf-icon"><i class="fas fa-user-tie"></i></div>
-                            <div>
-                                <strong>Customer CRM</strong>
-                                <p>Detailed client profiles, contract management, visit history, and custom data fields.</p>
+                            <div class="text-mono" style="margin-bottom: 16px; padding-left: 32px; color: var(--color-pulse-green);">
+                                performance: 'maximum',
                             </div>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.5rem;">
-                        <a href="contact.html" class="btn btn-primary" id="spotlight-demo">
-                            <i class="fas fa-calendar-alt"></i> Request a Demo
-                        </a>
-                        <a href="capital-field-saas.html" class="btn btn-secondary" id="spotlight-saas">
-                            <i class="fas fa-arrow-up-right-from-square"></i> Go to Capital Field
-                        </a>
-                    </div>
-                </div>
-                <div class="spotlight-visual">
-                    <div class="dashboard-mockup">
-                        <div class="mockup-header">
-                            <span class="mockup-dot red"></span>
-                            <span class="mockup-dot yellow"></span>
-                            <span class="mockup-dot green"></span>
-                            <span class="mockup-title">CapitalField — Dashboard</span>
-                        </div>
-                        <div class="mockup-body">
-                            <div class="mockup-stat-grid">
-                                <div class="mockup-stat">
-                                    <div class="ms-label">Today's Visits</div>
-                                    <div class="ms-value">24</div>
-                                    <div class="ms-sub">↑ 12% vs yesterday</div>
-                                </div>
-                                <div class="mockup-stat green">
-                                    <div class="ms-label">Completed</div>
-                                    <div class="ms-value">18</div>
-                                    <div class="ms-sub">75% completion rate</div>
-                                </div>
-                                <div class="mockup-stat purple">
-                                    <div class="ms-label">Revenue</div>
-                                    <div class="ms-value">12,400 EGP</div>
-                                    <div class="ms-sub">This month</div>
-                                </div>
-                                <div class="mockup-stat orange">
-                                    <div class="ms-label">Active Techs</div>
-                                    <div class="ms-value">8</div>
-                                    <div class="ms-sub">Out of 10</div>
-                                </div>
+                            <div class="text-mono" style="margin-bottom: 16px; padding-left: 32px; color: var(--color-pulse-green);">
+                                redundancy: false,
                             </div>
-                            <div class="mockup-bar-chart">
-                                <div class="bar-label">Weekly Performance</div>
-                                <div class="bars">
-                                    <div class="bar" style="height:60%"><span>Mon</span></div>
-                                    <div class="bar" style="height:80%"><span>Tue</span></div>
-                                    <div class="bar" style="height:55%"><span>Wed</span></div>
-                                    <div class="bar" style="height:90%"><span>Thu</span></div>
-                                    <div class="bar active" style="height:75%"><span>Fri</span></div>
-                                    <div class="bar" style="height:40%"><span>Sat</span></div>
-                                    <div class="bar" style="height:65%"><span>Sun</span></div>
-                                </div>
+                            <div class="text-mono" style="margin-bottom: 16px; padding-left: 32px; color: var(--color-pulse-green);">
+                                scale: 'infinite'
+                            </div>
+                            <div class="text-mono" style="margin-bottom: 16px;">
+                                });
+                            </div>
+                            <div class="text-mono" style="margin-top: 32px; color: var(--color-ash);">
+                                // System initialized in 0.04ms
+                            </div>
+                            <div class="text-mono" style="color: var(--color-ash);">
+                                // Awaiting commands...
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- Trusted By Logos (Adapted to tech stack or clients) -->
+    <section class="container">
+        <div class="customer-logos text-body-muted">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <i class="fab fa-react"></i> React
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <i class="fab fa-node-js"></i> Node.js
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <i class="fab fa-python"></i> Python
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <i class="fab fa-aws"></i> AWS
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <i class="fas fa-database"></i> PostgreSQL
+            </div>
+        </div>
     </section>
 
-    <!-- Raze KB Spotlight -->
-    <section class="spotlight" style="background: var(--bg-color); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-        <div class="container">
-            <div class="spotlight-grid" style="grid-template-columns: 1.1fr 1fr; align-items: center;">
-                <div class="spotlight-visual">
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
-                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem;">
-                            <div style="display: flex; gap: 8px;">
-                                <span class="mockup-dot red"></span>
-                                <span class="mockup-dot yellow"></span>
-                                <span class="mockup-dot green"></span>
-                            </div>
-                            <span style="font-size: 0.82rem; color: #4facfe; font-family: monospace;">raze-kb://terminal-arsenal</span>
-                        </div>
-                        <div class="kb-code-snippet" style="margin-bottom: 1rem;">
-                            <code># Kerberoasting &amp; AD Extraction</code>
-                        </div>
-                        <div class="kb-code-snippet" style="margin-bottom: 1rem; color: #a78bfa;">
-                            <code>GetUserSPNs.py corp.local/user -request -dc-ip 10.10.10.1</code>
-                        </div>
-                        <div class="kb-code-snippet" style="color: #34d399;">
-                            <code>python3 raze_recon.py --target client.com --full-audit</code>
-                        </div>
-                        <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                            <span class="kb-tag">Offensive Security</span>
-                            <span class="kb-tag">Defense Blueprints</span>
-                            <span class="kb-tag">Cheatsheets</span>
-                            <span class="kb-tag">Toolkits</span>
-                        </div>
+    <!-- Feature 1 -->
+    <section class="container feature-section">
+        <div class="feature-text">
+            <span class="badge" style="margin-bottom: 16px;">Engineering</span>
+            <h2 class="text-heading" style="font-size: var(--text-heading-sm); margin-bottom: 24px;">Architecture without compromise.</h2>
+            <p class="text-body-muted">We build software from the ground up, utilizing cutting-edge paradigms to deliver robust applications. Everything you need, nothing you don't.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <div>
+                        <div class="text-body" style="color: var(--color-paper); font-weight: var(--font-weight-w510);">Microservices ready</div>
+                        <div class="text-body-muted" style="font-size: 14px;">Designed to scale effortlessly with your user base.</div>
                     </div>
                 </div>
-                <div class="spotlight-text">
-                    <div class="cyber-badge">
-                        <i class="fas fa-shield-halved"></i> KNOWLEDGE BASE & CYBERSECURITY ARSENAL
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <div>
+                        <div class="text-body" style="color: var(--color-paper); font-weight: var(--font-weight-w510);">Zero bloat</div>
+                        <div class="text-body-muted" style="font-size: 14px;">Optimized codebases that compile faster and run leaner.</div>
                     </div>
-                    <h2>Raze KB</h2>
-                    <p>An extensive cybersecurity knowledge base engineered by RAZE. Packed with interactive security cheat sheets, penetration testing playbooks, privilege escalation paths, and automated recon tools.</p>
-                    <div class="spotlight-features">
-                        <div class="spotlight-feature">
-                            <div class="sf-icon" style="background: rgba(79, 172, 254, 0.12); color: #4facfe;"><i class="fas fa-bug"></i></div>
-                            <div>
-                                <strong>Web & API Exploitation Playbooks</strong>
-                                <p>Comprehensive testing guides for SQLi, XSS, SSRF, IDOR, and OAuth vulnerabilities.</p>
-                            </div>
-                        </div>
-                        <div class="spotlight-feature">
-                            <div class="sf-icon" style="background: rgba(139, 92, 246, 0.12); color: #a78bfa;"><i class="fas fa-sitemap"></i></div>
-                            <div>
-                                <strong>Active Directory & Network Pivoting</strong>
-                                <p>Domain escalation strategies, Kerberos manipulation, BloodHound analysis, and tunneling.</p>
-                            </div>
-                        </div>
-                        <div class="spotlight-feature">
-                            <div class="sf-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;"><i class="fas fa-toolbox"></i></div>
-                            <div>
-                                <strong>Curated Security Tools & Scripts</strong>
-                                <p>Automated enumeration utilities and vulnerability scanning scripts built by RAZE.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-visual">
+            <div style="display: flex; flex-direction: column; gap: 16px; width: 80%;">
+                <div style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); padding: 16px; border-radius: 6px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span class="text-mono" style="color: var(--color-fog);">Build Time</span>
+                        <span class="text-mono" style="color: var(--color-pulse-green);">450ms</span>
                     </div>
-                    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
-                        <a href="https://razekb.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="spotlight-kb-access" style="background: linear-gradient(135deg, #0072ff, #00c6ff);">
-                            <i class="fas fa-external-link-alt"></i> Access Raze KB
-                        </a>
-                        <a href="contact.html" class="btn btn-secondary">
-                            <i class="fas fa-shield-halved"></i> Request Consultation
-                        </a>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); padding: 16px; border-radius: 6px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span class="text-mono" style="color: var(--color-fog);">Lighthouse Score</span>
+                        <span class="text-mono" style="color: var(--color-pulse-green);">100</span>
+                    </div>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); border: 0.5px solid var(--color-graphite); padding: 16px; border-radius: 6px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span class="text-mono" style="color: var(--color-fog);">Redundancy Check</span>
+                        <span class="text-mono" style="color: var(--color-fog);">0 issues</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries -->
-    <section class="sectors">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sectors We Power</h2>
-                <p>CapitalField by RAZE includes pre-built system modules tailored for specific industry workflows.</p>
-            </div>
-            <div class="sectors-grid">
-                <div class="sector-chip"><i class="fas fa-tint"></i> Water Filters</div>
-                <div class="sector-chip"><i class="fas fa-snowflake"></i> HVAC & AC</div>
-                <div class="sector-chip"><i class="fas fa-bug"></i> Pest Control</div>
-                <div class="sector-chip"><i class="fas fa-elevator"></i> Elevators</div>
-                <div class="sector-chip"><i class="fas fa-shield-alt"></i> Security Systems</div>
-                <div class="sector-chip"><i class="fas fa-solar-panel"></i> Solar Energy</div>
-                <div class="sector-chip"><i class="fas fa-blender"></i> Home Appliances</div>
-                <div class="sector-chip"><i class="fas fa-broom"></i> Cleaning</div>
+    <!-- Feature 2 -->
+    <section class="container feature-section reverse">
+        <div class="feature-text">
+            <span class="badge red" style="margin-bottom: 16px;">Security</span>
+            <h2 class="text-heading" style="font-size: var(--text-heading-sm); margin-bottom: 24px;">Bulletproof infrastructure.</h2>
+            <p class="text-body-muted">Security is not an afterthought. It is woven into the fabric of every application we develop, ensuring your data remains impenetrable.</p>
+            <div style="margin-top: 32px;">
+                <a href="contact.html" class="btn btn-secondary">Learn about our security practices</a>
             </div>
         </div>
-    </section>
-
-    <!-- Vision & Mission -->
-    <section style="background: var(--card-bg); padding: 5rem 0;">
-        <div class="container vision-grid">
-            <div class="vision-col">
-                <div style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">
-                    <i class="fas fa-eye"></i>
-                </div>
-                <h2>Our Vision</h2>
-                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8;">
-                    Empowering every enterprise and service business with robust, intelligent software infrastructure that transforms raw operations into data-driven, scalable growth. RAZE is building that future.
-                </p>
-            </div>
-            <div class="vision-col">
-                <div style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <h2>Our Mission</h2>
-                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8;">
-                    To engineer high-performance software systems that eliminate operational bottlenecks, streamline team coordination, and drive revenue through technology built specifically for real-world workflows.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why RAZE -->
-    <section class="why-flo">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose RAZE?</h2>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <i class="fas fa-puzzle-piece"></i>
-                    <h3>Unified Systems</h3>
-                    <p>Integrate scheduling, CRM, inventory, field teams, contracts, and financial analytics into one platform.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-building"></i>
-                    <h3>Multi-Tenant Security</h3>
-                    <p>Enterprise isolation standards ensuring high data security and seamless multi-branch management.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-sliders-h"></i>
-                    <h3>Modular & Adaptable</h3>
-                    <p>Custom statuses, roles, report builders, and industry modules tailored directly to your operational process.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-bolt"></i>
-                    <h3>High Performance</h3>
-                    <p>Engineered with Next.js, Prisma, and PostgreSQL for instantaneous response times and reliable uptime.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-banner">
-        <div class="container" style="text-align: center;">
-            <h2>Ready to Transform Your Operations & Security?</h2>
-            <p>Experience CapitalField and Raze KB — contact our software and security engineering team today.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
-                <a href="contact.html" class="btn btn-primary" id="cta-demo">
-                    <i class="fas fa-calendar-alt"></i> Request a Demo
-                </a>
-                <a href="capital-field-saas.html" class="btn btn-secondary" id="cta-saas">
-                    <i class="fas fa-arrow-up-right-from-square"></i> Go to Capital Field
-                </a>
-                <a href="https://razekb.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="cta-kb">
-                    <i class="fas fa-shield-halved"></i> Explore Raze KB
-                </a>
+        <div class="feature-visual">
+            <div style="text-align: center;">
+                <i class="fas fa-shield-halved" style="font-size: 64px; color: var(--color-raze-red); margin-bottom: 24px;"></i>
+                <div class="text-mono" style="color: var(--color-fog);">AES-256 Encryption active</div>
+                <div class="text-mono" style="color: var(--color-fog); margin-top: 8px;">Zero-trust architecture</div>
             </div>
         </div>
     </section>
@@ -379,27 +178,23 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-content">
+                <div class="logo-link">
+                    <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                    RAZE Software
+                </div>
+                <div class="footer-links">
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/RazeSoftware" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/raze.software/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/raze-software" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RazeGroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="mailto:raze.softwaree@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p class="copyright">&copy; 2026 Raze Software. All rights reserved.</p>
+                <div class="text-mono" style="color: var(--color-ash); font-size: 12px;">Status: All systems operational</div>
             </div>
-            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
-
 </html>
