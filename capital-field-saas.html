@@ -1,100 +1,82 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapitalField SaaS — Platform Under Development | RAZE</title>
-    <meta name="description"
-        content="CapitalField multi-tenant SaaS platform is currently under active engineering by RAZE Software. Explore features and request early access.">
+    <meta name="description" content="CapitalField multi-tenant SaaS platform is currently under active engineering by RAZE Software. Explore features and request early access.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home-extra.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/raze-logo.svg">
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="container nav-container">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                RAZE
             </a>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="how-it-works.html" class="nav-link">How It Works</a>
+                <a href="contact.html" class="btn btn-pill" style="margin-left: 16px;">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Under Development Hero -->
-    <section class="status-page-hero">
-        <div class="hero-bg-grid"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="status-card">
-                <div class="status-pulse-badge">
-                    <span class="status-dot"></span>
-                    <span>System Under Active Development</span>
-                </div>
-
-                <h1 style="font-size: 2.6rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.2;">
-                    CapitalField SaaS <br><span class="gradient-text">Is Currently Under Engineering</span>
-                </h1>
-
-                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem;">
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="badge" style="margin-bottom: 16px; border-color: var(--color-pulse-green); color: var(--color-pulse-green);">
+                    <i class="fas fa-circle" style="font-size: 8px; margin-right: 6px;"></i> System Under Active Development
+                </span>
+                
+                <h1 class="text-hero hero-title">CapitalField SaaS <br>Is Currently Under Engineering.</h1>
+                
+                <p class="hero-subtitle" style="margin: 24px auto;">
                     We are currently building and stress-testing the next-generation multi-tenant cloud architecture for CapitalField. Our engineers are polishing live dispatch telemetry, AI scheduling, and multi-tenant security layers.
                 </p>
 
                 <!-- Development Progress Status -->
-                <div class="progress-container">
-                    <div class="progress-header">
-                        <span><i class="fas fa-code-branch" style="color: var(--accent-color); margin-right: 6px;"></i> Platform Build Stage</span>
-                        <span style="color: #ff4d63; font-weight: 700;">85% Completed</span>
+                <div style="background: var(--color-obsidian); border: 0.5px solid var(--color-graphite); border-radius: 8px; padding: 32px; text-align: left; margin: 40px 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <span class="text-body-muted"><i class="fas fa-code-branch" style="color: var(--color-fog); margin-right: 6px;"></i> Platform Build Stage</span>
+                        <span style="color: var(--color-pulse-green); font-family: var(--font-mono); font-size: 14px;">85% Completed</span>
                     </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: 85%;"></div>
+                    
+                    <div style="width: 100%; height: 4px; background: var(--color-carbon); border-radius: 2px; margin-bottom: 32px; overflow: hidden;">
+                        <div style="width: 85%; height: 100%; background: var(--color-pulse-green);"></div>
                     </div>
 
-                    <div class="status-modules-grid">
-                        <div class="status-module-item">
-                            <i class="fas fa-check-circle" style="color: #10b981;"></i>
-                            <span>Multi-Tenant DB Engine</span>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                        <div style="display: flex; align-items: center; gap: 12px; color: var(--color-paper);">
+                            <i class="fas fa-check-circle" style="color: var(--color-pulse-green);"></i>
+                            <span class="text-mono" style="font-size: 13px;">Multi-Tenant DB Engine</span>
                         </div>
-                        <div class="status-module-item">
-                            <i class="fas fa-check-circle" style="color: #10b981;"></i>
-                            <span>Field Visit Tracker</span>
+                        <div style="display: flex; align-items: center; gap: 12px; color: var(--color-paper);">
+                            <i class="fas fa-check-circle" style="color: var(--color-pulse-green);"></i>
+                            <span class="text-mono" style="font-size: 13px;">Field Visit Tracker</span>
                         </div>
-                        <div class="status-module-item">
+                        <div style="display: flex; align-items: center; gap: 12px; color: var(--color-paper);">
                             <i class="fas fa-spinner fa-spin" style="color: #f59e0b;"></i>
-                            <span>Cloud Telemetry Sync</span>
+                            <span class="text-mono" style="font-size: 13px;">Cloud Telemetry Sync</span>
                         </div>
-                        <div class="status-module-item">
-                            <i class="fas fa-shield-alt" style="color: var(--accent-color);"></i>
-                            <span>Security Hardening</span>
+                        <div style="display: flex; align-items: center; gap: 12px; color: var(--color-paper);">
+                            <i class="fas fa-shield-alt" style="color: var(--color-fog);"></i>
+                            <span class="text-mono" style="font-size: 13px;">Security Hardening</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Action Buttons -->
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                    <a href="index.html" class="btn btn-primary" id="btn-back-home" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.9rem 2rem;">
-                        <i class="fas fa-arrow-left"></i> Back to Main Page
+                <div class="hero-ctas" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope" style="margin-right: 8px;"></i> Request Early Access
                     </a>
-                    <a href="contact.html" class="btn btn-secondary" id="btn-request-early-access" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.9rem 2rem;">
-                        <i class="fas fa-envelope"></i> Request Demo & Early Access
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Main
                     </a>
                 </div>
             </div>
@@ -104,28 +86,23 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="capital-field.html">CapitalField</a>
-                <a href="raze-kb.html">Raze KB</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-content">
+                <div class="logo-link">
+                    <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
+                    RAZE Software
+                </div>
+                <div class="footer-links">
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/RazeSoftware" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/raze.software/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/raze-software" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RazeGroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="mailto:raze.softwaree@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p class="copyright">&copy; 2026 Raze Software. All rights reserved.</p>
+                <div class="text-mono" style="color: var(--color-ash); font-size: 12px;">Status: All systems operational</div>
             </div>
-            <p class="copyright">&copy; 2026 RAZE. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
