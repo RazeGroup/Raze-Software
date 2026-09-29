@@ -17,12 +17,17 @@
                 <img src="assets/images/raze-logo.svg" alt="RAZE" class="logo-img">
                 RAZE
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="products.html" class="nav-link">Products</a>
                 <a href="how-it-works.html" class="nav-link">How It Works</a>
                 <a href="contact.html" class="btn btn-pill" style="margin-left: 16px;">Contact Us</a>
             </div>
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -107,6 +112,133 @@
             </div>
         </div>
     </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="container services-section">
+        <div class="services-header">
+            <span class="badge" style="margin-bottom: 16px;">What We Do</span>
+            <h2 class="text-heading services-title">Engineered for enterprises.<br>Built to outlast the rest.</h2>
+            <p class="text-body-muted services-subtitle">We specialize in the services that actually move businesses forward — security, infrastructure, automation, and complex software systems.</p>
+        </div>
+
+        <!-- ── FEATURED ENTERPRISE SERVICES ── -->
+        <div class="services-grid services-grid--featured">
+
+            <!-- Security Systems -->
+            <div class="service-card service-card--highlight service-card--large">
+                <div class="service-icon-wrap" style="--icon-color: #c80000; --icon-bg: rgba(200,0,0,0.1);">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h3 class="service-name">Cybersecurity & Protection Systems</h3>
+                <p class="service-desc">We design and develop enterprise-grade security systems — from intrusion detection and secure architecture to custom protection platforms built specifically for your organization.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Threat Modeling</span>
+                    <span class="service-tag">Zero-Trust Architecture</span>
+                    <span class="service-tag">Security Audits</span>
+                    <span class="service-tag">Pen Testing</span>
+                    <span class="service-tag">SIEM</span>
+                </div>
+            </div>
+
+            <!-- Enterprise Software & ERP -->
+            <div class="service-card service-card--large">
+                <div class="service-icon-wrap" style="--icon-color: #27a644; --icon-bg: rgba(39,166,68,0.08);">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="service-name">Enterprise Software & ERP</h3>
+                <p class="service-desc">End-to-end business management platforms, multi-tenant SaaS systems, and custom ERP solutions tailored to the exact operational needs of your company — no bloat, no off-the-shelf compromises.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Multi-tenant SaaS</span>
+                    <span class="service-tag">ERP Systems</span>
+                    <span class="service-tag">Field Service Mgmt</span>
+                    <span class="service-tag">Dashboards</span>
+                </div>
+            </div>
+
+            <!-- Microservices & Architecture -->
+            <div class="service-card service-card--large">
+                <div class="service-icon-wrap" style="--icon-color: #02b8cc; --icon-bg: rgba(2,184,204,0.08);">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <h3 class="service-name">Microservices & System Architecture</h3>
+                <p class="service-desc">We architect distributed systems designed for scale. Event-driven, containerized, and production-hardened backends built to serve millions of requests without breaking a sweat.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Docker</span>
+                    <span class="service-tag">Kubernetes</span>
+                    <span class="service-tag">Event-Driven</span>
+                    <span class="service-tag">API Gateway</span>
+                    <span class="service-tag">Message Queues</span>
+                </div>
+            </div>
+
+            <!-- Automation -->
+            <div class="service-card service-card--large">
+                <div class="service-icon-wrap" style="--icon-color: #a78bfa; --icon-bg: rgba(167,139,250,0.08);">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="service-name">Automation & Custom Tooling</h3>
+                <p class="service-desc">We build automation pipelines, internal tools, and intelligent scripts that eliminate manual overhead across your entire operation — from deployment workflows to business process automation.</p>
+                <div class="service-tags">
+                    <span class="service-tag">CI/CD Pipelines</span>
+                    <span class="service-tag">Workflow Bots</span>
+                    <span class="service-tag">Python Scripts</span>
+                    <span class="service-tag">Process Automation</span>
+                </div>
+            </div>
+
+            <!-- IT + R&D -->
+            <div class="service-card service-card--large">
+                <div class="service-icon-wrap" style="--icon-color: #f59e0b; --icon-bg: rgba(245,158,11,0.08);">
+                    <i class="fas fa-flask-vial"></i>
+                </div>
+                <h3 class="service-name">IT Consulting & Research</h3>
+                <p class="service-desc">Specialized IT services for companies — infrastructure planning, cloud migration, and technology strategy. Backed by active R&D across cybersecurity, AI, distributed systems, and emerging tech domains.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Cloud Architecture</span>
+                    <span class="service-tag">IT Strategy</span>
+                    <span class="service-tag">AI / ML Research</span>
+                    <span class="service-tag">Networking</span>
+                    <span class="service-tag">Linux</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── STANDARD SERVICES (secondary strip) ── -->
+        <div class="services-also">
+            <span class="services-also-label">Also available</span>
+            <div class="services-also-list">
+                <div class="services-also-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Development</span>
+                </div>
+                <div class="services-also-divider"></div>
+                <div class="services-also-item">
+                    <i class="fas fa-mobile-screen"></i>
+                    <span>Mobile Apps</span>
+                </div>
+                <div class="services-also-divider"></div>
+                <div class="services-also-item">
+                    <i class="fas fa-pen-ruler"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="services-also-divider"></div>
+                <div class="services-also-item">
+                    <i class="fas fa-code"></i>
+                    <span>Custom APIs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="services-cta">
+            <a href="contact.html" class="btn btn-primary">
+                Start a project <i class="fas fa-arrow-right" style="font-size: 12px; margin-left: 4px;"></i>
+            </a>
+            <a href="products.html" class="btn btn-secondary">See our products</a>
+        </div>
+    </section>
+
 
     <!-- Feature 1 -->
     <section class="container feature-section">
@@ -196,5 +328,6 @@
             </div>
         </div>
     </footer>
+<script src="mobile-optimization.js"></script>
 </body>
 </html>

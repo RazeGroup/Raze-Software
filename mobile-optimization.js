@@ -3,9 +3,9 @@
 
 // Mobile navigation functionality
 function initializeMobileNavigation() {
-    const mobileToggle = document.querySelector('.mobile-nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links a');
+    const mobileToggle = document.querySelector('#mobile-nav-toggle, .mobile-nav-toggle');
+    const navLinks = document.querySelector('#nav-links, .nav-links');
+    const navItems = document.querySelectorAll('#nav-links a, .nav-links a');
     
     if (!mobileToggle || !navLinks) return;
     
@@ -43,13 +43,11 @@ function initializeMobileNavigation() {
 }
 
 function openMobileNavigation() {
-    const navLinks = document.querySelector('.nav-links');
-    const mobileToggle = document.querySelector('.mobile-nav-toggle');
-    const toggleIcon = mobileToggle.querySelector('i');
+    const navLinks = document.querySelector('#nav-links, .nav-links');
+    const mobileToggle = document.querySelector('#mobile-nav-toggle, .mobile-nav-toggle');
     
     navLinks.classList.add('active');
-    toggleIcon.classList.remove('fa-bars');
-    toggleIcon.classList.add('fa-times');
+    mobileToggle.classList.add('open');
     mobileToggle.setAttribute('aria-expanded', 'true');
     
     // Prevent body scroll when menu is open
@@ -57,20 +55,15 @@ function openMobileNavigation() {
 }
 
 function closeMobileNavigation() {
-    const navLinks = document.querySelector('.nav-links');
-    const mobileToggle = document.querySelector('.mobile-nav-toggle');
-    const toggleIcon = mobileToggle?.querySelector('i');
+    const navLinks = document.querySelector('#nav-links, .nav-links');
+    const mobileToggle = document.querySelector('#mobile-nav-toggle, .mobile-nav-toggle');
     
     if (navLinks) {
         navLinks.classList.remove('active');
     }
     
-    if (toggleIcon) {
-        toggleIcon.classList.remove('fa-times');
-        toggleIcon.classList.add('fa-bars');
-    }
-    
     if (mobileToggle) {
+        mobileToggle.classList.remove('open');
         mobileToggle.setAttribute('aria-expanded', 'false');
     }
     
